@@ -47,15 +47,16 @@ export const styles = StyleSheet.create({
     fontSize: 12,
     fontWeight: 'bold',
     color: '#219AD6',
-    marginBottom: 20,
-    alignSelf: 'flex-end',
+    // marginBottom: 20,
+    // alignSelf: 'flex-end',
     // marginRight: '10%',
-    marginLeft: '65%',
+    textDecorationLine: 'underline',
+    // marginLeft: '65%',
   },
 
   touchForgotText: {
     alignItems: 'flex-end',
-    marginRight: '10%',
+    // marginRight: '10%',
   },
 
   input: {
@@ -67,6 +68,36 @@ export const styles = StyleSheet.create({
     borderColor: 'gray',
     paddingHorizontal: 10,
     borderWidth: 1,
+  },
+
+  passwordWrapper: {
+    // margin: 10,
+    width: '80%',
+    position: 'relative',
+    // justifyContent: 'center',
+  },
+
+  passwordInput: {
+    width: '100%',
+    borderRadius: 16,
+    padding: 10,
+    height: 46,
+    borderColor: 'gray',
+    // paddingHorizontal: 44,
+    borderWidth: 1,
+  },
+
+  eyeButton: {
+    position: 'absolute',
+    right: 12,
+    height: 46,
+    justifyContent: 'center',
+  },
+
+  eyeIcon: {
+    width: 22,
+    height: 22,
+    resizeMode: 'contain',
   },
 
   button: {
@@ -86,4 +117,48 @@ export const styles = StyleSheet.create({
     fontWeight: 'bold',
     textAlign: 'center',
   },
+
+  errorText: {
+    color: 'red',
+    textDecorationColor: 'red',
+    alignSelf: 'flex-start',
+    fontSize: 12,
+    marginBottom: 10,
+    marginLeft: 40,
+  },
+
+  rowContainer:{
+    margin:10,
+// padding:10,    
+// alignSelf: 'flex-start',
+    width: 290,
+    justifyContent: 'space-between',
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+  },
+
+  asOwner: {
+    fontSize: 12
+  },
+
+  subRowCon:{
+    flexDirection: 'row',
+    flexWrap: 'wrap',  
+  },
+  
+  checkBox: {
+    height: 20,
+    width: 20,
+    backgroundColor: 'white',
+    borderColor: 'black',
+    borderStyle: 'solid',
+    borderWidth: 1,
+    marginRight: 3,
+    borderRadius: 4
+  },
+  
+  titleStyle: {
+    justifyContent: 'center',
+    alignSelf: 'center',
+  }
 });

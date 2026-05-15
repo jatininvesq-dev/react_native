@@ -1,12 +1,13 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator, NativeStackNavigationProp } from '@react-navigation/native-stack';
-import Login from '../../screens/login.screen';
-import Forgotpass from '../../screens/forgot_password/forgotpass.screen';
-
+import Login from '../screens/login.screen';
+import Forgotpass from '../screens/forgot_password/forgotpass.screen';
+import Dashboard from '../screens/dashboard/dashboard.screen';
 export type RootStackParamList = {
   Login: undefined;
   ForgotPasswordScreen: undefined;
+  Dashboard: undefined;
 };
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
@@ -20,6 +21,13 @@ export const RootNavigator = () => (
         component={Forgotpass}
         options={{ title: 'Forgot Password', headerShown: true }}
       />
+
+      <Stack.Screen 
+      name="Dashboard"
+      options={{ title: 'Dashboard' }}
+      component={Dashboard} />
+
     </Stack.Navigator>
   </NavigationContainer>
+  
 );
